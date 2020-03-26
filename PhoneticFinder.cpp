@@ -53,10 +53,10 @@ bool phonetic::similar(char x,char y)
 
 
 }
-bool sameLetter(char a, char b)
+bool phonetic::sameLetter(char a, char b)
     {
-        if(a < b)return a + ASCII == b;
-        return b + ASCII == a;
+        if(a < b)return( a + ASCII) == b;
+        return( b + ASCII) == a;
     }
 string phonetic::find(string text,string word)
 {
