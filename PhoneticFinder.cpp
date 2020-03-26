@@ -13,7 +13,7 @@ namespace phonetic{
 bool phonetic::similar(char x,char y)
 {
     if (x==y) return true;
-    if(sameLetter(x,y ))return true;
+    /**if(sameLetter(x,y ))return true;*/
        
     if(((x=='v')||(x=='V'))&&((y=='w')||(y=='W')))   return true;     
     if(((x=='w')||(x=='W'))&&((y=='v')||(y=='V')))   return true;
@@ -53,11 +53,11 @@ bool phonetic::similar(char x,char y)
 
 
 }
-bool phonetic::sameLetter(char a, char b)
+/**bool phonetic::sameLetter(char a, char b)
     {
         if(a < b)return( a + ASCII) == b;
         return( b + ASCII) == a;
-    }
+    }*/
 string phonetic::find(string text,string word)
 {
    string str = "";
