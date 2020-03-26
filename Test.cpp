@@ -55,7 +55,7 @@ TEST_CASE("Test replacement of c and k and q,also lower-case and upper-case") {
 }
 TEST_CASE("Test replacement of s and z,also lower-case and upper-case") {
     
-  string text = "the suspect was eating pizza"
+  string text = "the suspect was eating pizza";
     CHECK(find(text, "suspect") == string("suspect"));
     CHECK(find(text, "SuSbEcT") == string("suspect"));
     CHECK(find(text, "zozbekt") == string("suspect"));
