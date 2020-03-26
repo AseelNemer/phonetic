@@ -12,9 +12,11 @@ namespace phonetic{
 
 bool phonetic::similar(char x,char y)
 {
-    if (x==y) return true;
+    
     /**if(sameLetter(x,y ))return true;*/
        
+     if((x ==y )|| (x ==y+32) ||( x ==y-32) ) return true;
+
     if(((x=='v')||(x=='V'))&&((y=='w')||(y=='W')))   return true;     
     if(((x=='w')||(x=='W'))&&((y=='v')||(y=='V')))   return true;
 
