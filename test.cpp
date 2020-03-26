@@ -1,5 +1,7 @@
 #include "doctest.h"
 #include "PhoneticFinder.hpp"
+
+#define ASCII 32
 using namespace phonetic;
 
 #include <string>
